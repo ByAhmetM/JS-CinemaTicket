@@ -1,0 +1,166 @@
+:root {
+    /* Renkler */
+    --backgroundColor: #292929;
+    --seatColor: #444451;
+    --textColor: #777;
+    --selectColor: #f6eb6f;
+    --reserveColor: #fff;
+    --infoBg: rgba(0, 0, 0, 0.2)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cinema {
+    color: red;
+    letter-spacing: 3px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(270deg, #D9AFD9 0%, #97D9E1 100%);
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.screen {
+    height: 200px;
+    width: 350px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px 7px rgba(255, 255, 255, 1);
+}
+
+.screen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.seatRow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat {
+    color: var(--seatColor);
+    font-size: 30px;
+    margin: 10px;
+    transition: all .3s ease;
+}
+
+
+/* NOT seçicisi parentez içine yazılan hariç */
+.seat:not(.reserve):hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.seat.reserve {
+    color: var(--reserveColor);
+}
+
+.seat.selected {
+    color: var(--selectColor);
+}
+
+.movie-list {
+    margin: 25px 0;
+
+}
+
+#movie {
+    cursor: pointer;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--infoBg);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 500px;
+    justify-content: center
+}
+
+
+.info li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    padding: 20px;
+}
+
+.info i {
+    font-size: 35px;
+}
+
+.info span {
+    font-size: 18px;
+}
+
+.infoText {
+    color: var(--reserveColor);
+    margin: 25px 0;
+    display: none;
+    font-size: 25px;
+    align-items: center;
+}
+
+.infoText span {
+    color: var(--selectColor);
+}
+
+.infoText button {
+    padding: 5px 10px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    background-color: red;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.open {
+    display: block;
+}
