@@ -1,9 +1,9 @@
 # JS-CinemaTicket
 JS-CinemaTicket
-
+````
 Sinema Koltuk Rezervasyon Uygulaması
 Bu uygulama, bir sinema salonunda koltuk rezervasyonunu simüle etmek için JavaScript kullanılarak geliştirilmiştir. Kullanıcılar film seçebilir ve boş koltukları seçebilirler.
-
+````
 <img src="cinemahmet.gif"/>
 
 Nasıl Kullanılır?
