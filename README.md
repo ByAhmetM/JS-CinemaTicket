@@ -8,12 +8,12 @@ Bu uygulama, bir sinema salonunda koltuk rezervasyonunu simüle etmek için Java
 
 Nasıl Kullanılır?
 ````
-<ol>
+
 <li>Uygulamayı başlatın ve bir film seçin.</li>
 <li>Boş koltukları tıklayarak rezerve edin.</li>
 <li>Seçtiğiniz koltukları görsel olarak işaretleyebilirsiniz.</li>
 <li>Seçtiğiniz koltuk sayısı ve toplam ücret otomatik olarak hesaplanır.</li>
-</ol>
+
 ````
 
 Kod Özeti
